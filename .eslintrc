@@ -1,0 +1,44 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:node/recommended"
+  ],
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "document": false,
+    "navigator": false,
+    "window": false
+  },
+  "plugins": [
+    "node"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      2
+    ],
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "ignore"
+      }
+    ],
+    "no-console": 0,
+    "no-process-exit": 0
+  }
+}
